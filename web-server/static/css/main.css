@@ -1,11 +1,36 @@
 body{
-margin: 0;
-
+margin: 0px;
 }
 
-#logotip{
-margin-top: 10%;
-margin-left: 40%;
-width: 446px;
-height: 457px;
+#main-div{
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ height: 1280;
+}
+#logo{
+ margin: 5px;
+ padding: 5px;
+ flex: 0 1 auto;
+}
+
+#nav-bar{
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ width: 100%;
+ height: 100px;
+ margin: 5px;
+ padding: 5px;
+ flex: 0 1 auto;
+}
+#menu, #call{
+ margin: auto;
+ padding: auto;
+ flex: 0 1 auto;
+ align-self: flex-start;
+
 }

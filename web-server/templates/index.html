@@ -8,13 +8,18 @@
     <link href="{{ url_for('static', path='/css/main.css') }}" rel="stylesheet">
     <script src="{{ url_for('static', path='/js/main.js') }}"></script>
 
+
     <title>E&Art</title>
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', path='/images/site-icon.svg')}}">
 </head>
 <body>
 <div id="main-div">
-    <div id="logo-div">
-        <img id="logotip" src="{{ url_for('static', path='/images/logotip.svg') }}">
+    <div id='nav-bar'>
+        <img id="menu" src="{{ url_for('static', path='/images/menu-button.svg') }}"/>
+        <img id="call" src="{{ url_for('static', path='/images/call-button.svg') }}"/>
+    </div>
+    <div id="logo">
+       <img id="logotip" src="{{ url_for('static', path='/images/logotip.svg') }}"/>
     </div>
 
 </div>
