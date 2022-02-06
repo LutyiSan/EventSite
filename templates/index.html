@@ -14,13 +14,20 @@
 </head>
 <body>
 <div id="main-div">
-    <div id='nav-bar'>
-        <img id="menu" src="{{ url_for('static', path='/images/menu-button.svg') }}"/>
-        <img id="call" src="{{ url_for('static', path='/images/call-button.svg') }}"/>
-    </div>
-    <div id="logo">
+    <div class="nav-bar">
+        <img class="nav-icon" id="instagram" src="{{ url_for('static', path='/images/instagram-icon.svg') }}"/>
+        <img class="nav-icon" id="vk" src="{{ url_for('static', path='/images/vk-icon.svg') }}"/>
+        <img class="nav-icon" id="telegram" src="{{ url_for('static', path='/images/telegram-icon.svg') }}"/>
+        <img class="nav-icon" id="menu" src="{{ url_for('static', path='/images/menu-icon.svg') }}"/>
+        </div><br>
        <img id="logotip" src="{{ url_for('static', path='/images/logotip.svg') }}"/>
-    </div>
+        <div class="menu">
+        <p>О нас</p>
+        <p>Услуги</p>
+            <p>Новости</p>
+            <p>Контакты</p>
+        </div>
+
 
 </div>
 </body>
