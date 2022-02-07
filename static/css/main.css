@@ -1,29 +1,29 @@
-body{
 
-}
 
 .nav-icon{
 margin: 2%;
 transform: scale(1.1,1.1);
+cursor: pointer;
 }
 
 .nav-bar{
-margin-left: 80%;
-cursor: pointer;
-
-
+margin-left: 40%;
 }
+
 #logotip{
  display: block;
   margin: 0 auto;
 }
 
 .menu{
-width: 20%;
+display: none;
+width: 50%;
 height; 50%;
 position: absolute;
-top: 20%;
-left: 80%;
+top: 10%;
+left: 50%;
 background-color: #666464;
 color: white;
+text-align: center;
+
 }
