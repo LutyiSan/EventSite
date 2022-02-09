@@ -1,5 +1,5 @@
 import uvicorn
-import jinja2
+
 from starlette.applications import Starlette
 from starlette.routing import Route, Mount
 from starlette.templating import Jinja2Templates
@@ -9,7 +9,7 @@ from starlette.staticfiles import StaticFiles
 templates = Jinja2Templates(directory='templates')
 
 async def homepage(request):
-    return templates.TemplateResponse('index.html', {'request': request})
+    return templates.TemplateResponse('new.html', {'request': request})
 
 routes = [
     Route('/', endpoint=homepage),
