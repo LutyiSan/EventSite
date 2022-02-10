@@ -18,6 +18,7 @@
   #main-div{
 margin: 0;
 background-image: url("{{ url_for('static', path='/images/body-fon.svg') }}");
+background-size: cover;
 }
 
 </style>
@@ -46,10 +47,19 @@ background-image: url("{{ url_for('static', path='/images/body-fon.svg') }}");
     </div>
 </div>
 <div id="main-2">
-<h2>О ПРОЕКТЕ</h2>
-    <p class="project">VAZA' это команда event специалистов - настоящих фанатов своего дела.<br>
-        Мы всегда в курсе последних трендов<br> и полны свежих идей, чтобы создать для Вас совершенное во всех смыслах событие.
-    </p>
+    <div class="project-text">
+        <h2>О ПРОЕКТЕ</h2>
+        <p class="project">VAZA' это команда event специалистов - настоящих фанатов своего дела.<br>
+            Мы всегда в курсе последних трендов<br> и полны свежих идей, чтобы создать для Вас совершенное во всех смыслах событие.
+        </p>
+    </div>
+    <div class="project-video">
+        <video class="video" loop="loop" autoplay="" muted="">
+            <source src="{{ url_for('static', path='/video/clip.mp4') }}" type="video/mp4" />
+            <source src="{{ url_for('static', path='/video/clip2.mp4') }}" type="video/mp4" />
+        </video>
+    </div>
+
 
 </div>
 </body>
